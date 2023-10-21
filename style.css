@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: brown;
+    
+}
+.spider{
+
+    
+        position: absolute;
+        display:flex;
+        
+        top: 30%;
+        
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    animation: swing 2s infinite;
+    transform-origin: top;
+    
+}
+.spiderweb{
+    position: relative;
+    background-color: white;
+    width: 2px;
+    height: 200px;
+    left:50%;
+    
+    transform: translate(-50%,-50%);
+
+
+}
+.spibody{
+    position: relative;
+    left: 32%;
+    top: 32%;
+    
+    width: 100px;
+    height: 100px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 50%;
+
+    
+}
+.eyes{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: space-around;
+    
+    
+    
+}
+.eye{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.point
+{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+
+}
+.legs{
+    position: absolute;
+    
+    
+    
+   
+}
+.spider .legs .leg{
+    width: 80px;
+    height: 30px;
+    border: 2px solid transparent;
+    border-top-color: #000;
+    border-radius: 40px 40px 0 0;
+    
+   
+
+}
+.spider .legs.left{
+    top: 30%;
+    left: 15%;
+}
+.spider .legs.right{
+    top: 30%;
+    right: 19%;
+}
+.left .leg:nth-child(3){
+    transform: rotate(-6deg);
+}
+.left .leg:nth-child(2){
+    transform: rotate(-1deg);
+}
+.right .leg:nth-child(3){
+    transform: rotate(-6deg);
+}
+.right .leg:nth-child(2){
+    transform: rotate(-1deg);
+}
+.left .leg:nth-child(1){
+    transform: rotate(-1deg);
+}
+.right .leg:nth-child(1){
+    transform: rotate(-6deg);
+}
